@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyadharshini M — Junior Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-initials">PM</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">Loading Portfolio</div>
+</div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Priyadharshini M</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="availability-tag">
+        <span class="avail-dot"></span>
+        Open to Work — Fresher
+      </div>
+      <h1 class="hero-name">Priyadharshini M</h1>
+      <p class="hero-subtitle">Junior Web Developer — <span>Python & Django</span></p>
+      <p class="hero-desc">Full-stack developer crafting web apps with Python, Django, and modern frontend tools. I turn ideas into clean, functional digital experiences — one line of code at a time.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card-wrap">
+        <div class="hero-orb"></div>
+        <div class="spinner-ring"></div>
+        <div class="hero-card">
+          <div class="card-avatar">PM</div>
+          <div class="card-role">Junior Web Developer</div>
+          <div class="card-subrole">Python · Django · React JS</div>
+          <div class="card-divider"></div>
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-num">4+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">4mo</div>
+              <div class="stat-label">Training</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">84.8%</div>
+              <div class="stat-label">Score</div>
+            </div>
+          </div>
+          <div class="card-badge">Available Immediately</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item">Python</div>
+    <div class="marquee-item">Django</div>
+    <div class="marquee-item">React JS</div>
+    <div class="marquee-item">FastAPI</div>
+    <div class="marquee-item">MySQL</div>
+    <div class="marquee-item">G-TEC Education</div>
+    <div class="marquee-item">Cauvery College</div>
+    <div class="marquee-item">HTML &amp; CSS</div>
+    <div class="marquee-item">JavaScript</div>
+    <div class="marquee-item">GitHub Copilot</div>
+    <div class="marquee-item">Amazon Q</div>
+    <div class="marquee-item">Full-Stack Dev</div>
+    <!-- duplicate for seamless loop -->
+    <div class="marquee-item">Python</div>
+    <div class="marquee-item">Django</div>
+    <div class="marquee-item">React JS</div>
+    <div class="marquee-item">FastAPI</div>
+    <div class="marquee-item">MySQL</div>
+    <div class="marquee-item">G-TEC Education</div>
+    <div class="marquee-item">Cauvery College</div>
+    <div class="marquee-item">HTML &amp; CSS</div>
+    <div class="marquee-item">JavaScript</div>
+    <div class="marquee-item">GitHub Copilot</div>
+    <div class="marquee-item">Amazon Q</div>
+    <div class="marquee-item">Full-Stack Dev</div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills" class="section-pad">
+  <div class="container">
+    <p class="section-label reveal">Capabilities</p>
+    <h2 class="section-title reveal">My <span>Skills</span></h2>
+    <p class="section-desc reveal">A mix of frontend finesse, backend logic, and database know-how — built through real projects and hands-on learning.</p>
+    <div class="skills-grid">
+      <div class="skill-bars reveal from-left">
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">Python & Django</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-1" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">HTML & CSS</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-2" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-pct">70%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-3" data-width="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">React JS</span><span class="skill-pct">55%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-4" data-width="55"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">MySQL & SQLite</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-1" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">FastAPI</span><span class="skill-pct">60%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-2" data-width="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info"><span class="skill-name">Git & GitHub</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill fill-3" data-width="75"></div></div>
+        </div>
+      </div>
+      <div class="tech-cloud reveal from-right">
+        <div>
+          <div class="tech-cloud-title">Frontend</div>
+          <div class="chips-wrap">
+            <span class="chip chip-indigo">HTML</span>
+            <span class="chip chip-pink">CSS</span>
+            <span class="chip chip-cyan">JavaScript</span>
+            <span class="chip chip-amber">React JS</span>
+            <span class="chip chip-indigo">Bootstrap</span>
+            <span class="chip chip-pink">Responsive Design</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cloud-title">Backend</div>
+          <div class="chips-wrap">
+            <span class="chip chip-cyan">Python</span>
+            <span class="chip chip-indigo">Django</span>
+            <span class="chip chip-amber">FastAPI</span>
+            <span class="chip chip-pink">REST API</span>
+            <span class="chip chip-cyan">CRUD Operations</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cloud-title">Tools & AI</div>
+          <div class="chips-wrap">
+            <span class="chip chip-indigo">VS Code</span>
+            <span class="chip chip-pink">PyCharm</span>
+            <span class="chip chip-cyan">Git & GitHub</span>
+            <span class="chip chip-amber">XAMPP</span>
+            <span class="chip chip-indigo">GitHub Copilot</span>
+            <span class="chip chip-pink">Amazon Q</span>
+            <span class="chip chip-cyan">ChatGPT</span>
+            <span class="chip chip-amber">Claude</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cloud-title">Soft Skills</div>
+          <div class="chips-wrap">
+            <span class="chip chip-indigo">Problem Solving</span>
+            <span class="chip chip-pink">Quick Learning</span>
+            <span class="chip chip-cyan">Team Collaboration</span>
+            <span class="chip chip-amber">Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-pad">
+  <div class="container">
+    <p class="section-label reveal">Journey</p>
+    <h2 class="section-title reveal">My <span>Experience</span></h2>
+    <p class="section-desc reveal">Hands-on training and real project work that shaped my skills as a developer.</p>
+    <div class="timeline">
+      <div class="timeline-item reveal from-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <div class="timeline-title">Python & Django Project Developer</div>
+          <div class="timeline-date">Jul 2025 – Oct 2025</div>
+        </div>
+        <div class="timeline-company">G-TEC Computer Education · Tiruchirappalli, Tamil Nadu</div>
+        <div class="timeline-desc">
+          Developed hands-on mini projects using Python, Django, HTML, CSS, JavaScript, and SQL during an intensive software engineering program. Built core features including CRUD operations, user authentication, form handling, and database connectivity. Practiced clean and reusable coding patterns, debugged issues systematically, and collaborated with peers on code reviews and problem-solving.
+        </div>
+        <div class="timeline-chips">
+          <span class="tl-chip">Python</span>
+          <span class="tl-chip">Django</span>
+          <span class="tl-chip">MySQL</span>
+          <span class="tl-chip">GitHub</span>
+          <span class="tl-chip">PyCharm</span>
+          <span class="tl-chip">VS Code</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal from-right">
+  <div class="timeline-dot" style="background: var(--pink); box-shadow: 0 0 12px var(--pink);"></div>
+  <div class="timeline-header">
+    <div class="timeline-title">Certificate in Advanced Software Engineering (CASE)</div>
+    <div class="timeline-date">Oct 2025</div>
+  </div>
+  <div class="timeline-company">G-TEC Computer Education · Tiruchirappalli</div>
+  <div class="timeline-desc">
+    Completed a 4-month intensive program covering Python, Django, SQL, web development 
+    fundamentals, debugging techniques, and version control with GitHub. Gained 
+    production-level understanding of building full-stack web applications.
+  </div>
+  <div class="timeline-chips">
+    <span class="tl-chip">Full-Stack</span>
+    <span class="tl-chip">Debugging</span>
+    <span class="tl-chip">Version Control</span>
+    <span class="tl-chip">Certification</span>
+  </div>
+  <!-- இந்த line add பண்ணு -->
+  <a href="https://drive.google.com/file/d/11Pwsy9qQwf9DKBvS8Xnh8NpHb8iSZ7u6/view?usp=drive_link" target="_blank" class="cert-btn">🏅 View Certificate ↗</a>
+</div>    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-pad">
+  <div class="container">
+    <p class="section-label reveal">Work</p>
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    <p class="section-desc reveal">Real applications built with real code — from blog platforms to full e-commerce flows.</p>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+  <span class="project-emoji">📝</span>
+  <div class="project-name">Blog Web Application</div>
+  <p class="project-desc">
+    A full-featured blog platform to create, edit & delete posts. 
+    Features slug-based URLs, Django admin & MySQL storage.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">HTML</span>
+    <span class="project-tag">CSS</span>
+    <span class="project-tag">JavaScript</span>
+    <span class="project-tag">Bootstrap</span>
+    <span class="project-tag">Django</span>
+    <span class="project-tag">Python</span>
+    <span class="project-tag">MySQL</span>
+
+  </div>
+  <div class="project-links">
+    <a href="https://blog-app-u9j8.onrender.com/" target="_blank" class="project-live-btn">🔗 Live Demo</a>
+    <a href="https://github.com/priyadharshinim195/blog-app" target="_blank" class="project-github-btn">🐱 GitHub</a>
+  </div>
+</div>
+      <div class="project-card reveal" style="transition-delay: 0.1s;">
+  <span class="project-emoji">🛒</span>
+  <div class="project-name">E-Commerce Web App</div>
+  <p class="project-desc">
+    Mini online store with product listing, cart & checkout flow. 
+    Includes user authentication & secure session handling.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">HTML</span>
+    <span class="project-tag">CSS</span>
+    <span class="project-tag">JavaScript</span>
+    <span class="project-tag">Bootstrap</span>  
+    <span class="project-tag">Django</span>
+    <span class="project-tag">Python</span>
+    <span class="project-tag">MySQL</span>
+    <span class="project-tag">Auth</span>
+  </div>
+  <div class="project-links">
+    <a href="https://ecommerce-qsfc.onrender.com/" target="_blank" class="project-live-btn">🔗 Live Demo</a>
+    <a href="https://github.com/priyadharshinim195/Ecommerce" target="_blank" class="project-github-btn">🐱 GitHub</a>
+  </div>
+</div>
+      <div class="project-card reveal" style="transition-delay: 0.2s;">
+  <span class="project-emoji">🤖</span>
+  <div class="project-name">AI-Powered Web App</div>
+  <p class="project-desc">
+    A web application integrated with AI tools to enhance 
+    visualization and user experience using Python & Django.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">Python</span>
+    <span class="project-tag">FastAPI</span>  
+    <span class="project-tag">MySQL</span> 
+    <!-- <span class="project-tag">Django</span> -->
+    <span class="project-tag">React JS</span>
+    <span class="project-tag">GitHub</span>
+  </div>
+  <div class="project-links">
+    <a href="https://priyadharshinim195.github.io/Ai_interior_design/" target="_blank" class="project-live-btn">🔗 Live Demo</a>
+    <a href="https://github.com/priyadharshinim195/Ai_interior_design" target="_blank" class="project-github-btn">🐱 GitHub</a>
+  </div>
+</div>
+      <div class="project-card reveal" style="transition-delay: 0.3s;">
+  <span class="project-emoji">🖥️</span>
+  <div class="project-name">Portfolio — Website</div>
+  <p class="project-desc">
+    Personal developer portfolio with animated hero, particle background, 
+    skill bars, project cards & glass morphism UI.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">HTML</span>
+    <span class="project-tag">CSS</span>
+    <span class="project-tag">JavaScript</span>
+    <span class="project-tag">GitHub Pages</span>
+  </div>
+  <div class="project-links">
+    <a href="https://priyaanimeport.netlify.app/" target="_blank" class="project-live-btn">🔗 Live Demo</a>
+    <a href="https://github.com/priyadharshinim195" target="_blank" class="project-github-btn">🐱 GitHub</a>
+  </div>
+</div>
+
+<div class="project-card reveal" style="transition-delay: 0.4s;">
+  <span class="project-emoji">📚</span>
+  <div class="project-name">Booksky — Book Tracker</div>
+  <p class="project-desc">
+    A book collection tracker where users can add, view & delete books. 
+    Features card UI & deployed on GitHub Pages.
+  </p>
+  <div class="project-tags">
+    <span class="project-tag">HTML</span>
+    <span class="project-tag">CSS</span>
+    <span class="project-tag">JavaScript</span>
+    <span class="project-tag">GitHub Pages</span>
+  </div>
+  <div class="project-links">
+    <a href="https://priyadharshinim195.github.io/Booksky/" target="_blank" class="project-live-btn">🔗 Live Demo</a>
+    <a href="https://github.com/priyadharshinim195/Booksky" target="_blank" class="project-github-btn">🐱 GitHub</a>
+  </div>
+</div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section-pad">
+  <div class="container">
+    <p class="section-label reveal">Background</p>
+    <h2 class="section-title reveal">Education & <span>Certifications</span></h2>
+    <p class="section-desc reveal">A strong academic record and technical certification that fuels a developer's mindset.</p>
+    <div class="edu-grid">
+      <div class="edu-card reveal from-left">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">Bachelor of Science in Chemistry</div>
+        <div class="edu-inst">Cauvery College for Women (Autonomous) · Tiruchirapalli</div>
+        <div class="edu-meta">
+          <span class="edu-year">2022 – 2025</span>
+          <span class="edu-score">84.8 / 100</span>
+        </div>
+      </div>
+      <div class="edu-card reveal from-right">
+        <div class="edu-icon" style="background: linear-gradient(135deg, var(--cyan), var(--amber));">🏅</div>
+        <div class="edu-degree">Certificate in Advanced Software Engineering (CASE)</div>
+        <div class="edu-inst">G-TEC Computer Education · Tiruchirappalli</div>
+        <div class="edu-meta">
+          <span class="edu-year">Oct 2025</span>
+          <a href="https://drive.google.com/file/d/11Pwsy9qQwf9DKBvS8Xnh8NpHb8iSZ7u6/view?usp=drive_link" target="_blank" class="edu-score cert-link">Certified ↗</a>
+        </div>  
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="lang-title">Languages</div>
+      <div class="lang-badges">
+        <div class="lang-badge"><span class="lang-dot" style="background: var(--indigo-light);"></span> Tamil — Native</div>
+        <div class="lang-badge"><span class="lang-dot" style="background: var(--cyan);"></span> English — Professional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <p class="section-label reveal">Let's Connect</p>
+    <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+    <p class="section-desc reveal">I'm actively looking for entry-level web developer roles. Let's build something great together.</p>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="contact-card reveal from-left">
+          <div class="contact-icon" style="background: rgba(99,102,241,0.15);">📧</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">priyamarimuthu197@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-card reveal from-left" style="transition-delay: 0.1s;">
+          <div class="contact-icon" style="background: rgba(6,182,212,0.15);">📱</div>
+          <div class="contact-info">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 93428 69009</span>
+          </div>
+        </div>
+        <div class="contact-card reveal from-left" style="transition-delay: 0.2s;">
+          <div class="contact-icon" style="background: rgba(236,72,153,0.15);">📍</div>
+          <div class="contact-info">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Tiruchirapalli, Tamil Nadu</span>
+          </div>
+        </div>
+        <div class="contact-card reveal from-left" style="transition-delay: 0.3s;">
+  <div class="contact-icon" style="background: rgba(245,158,11,0.15);">🐱</div>
+  <div class="contact-info">
+    <span class="contact-label">GitHub</span>
+    <span class="contact-value">priyadharshinim195</span>
+  </div>
+  <a href="https://github.com/priyadharshinim195" target="_blank" class="contact-link-btn">↗</a>
+</div>
+
+<div class="contact-card reveal from-left" style="transition-delay: 0.4s;">
+  <div class="contact-icon" style="background: rgba(99,102,241,0.15);">💼</div>
+  <div class="contact-info">
+    <span class="contact-label">LinkedIn</span>
+    <span class="contact-value">priyadharshini-m215</span>
+  </div>
+  <a href="https://linkedin.com/in/priyadharshini-m215" target="_blank" class="contact-link-btn">↗</a>
+</div>
+        <div class="contact-card reveal from-left" style="transition-delay: 0.4s;">
+          <div class="contact-icon" style="background: rgba(99,102,241,0.15);">⚡</div>
+          <div class="contact-info">
+            <span class="contact-label">Availability</span>
+            <span class="contact-value">Immediately Available</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <div class="ripple-wrap">
+          <div class="ripple"></div>
+          <div class="ripple"></div>
+          <div class="ripple"></div>
+          <div class="contact-avatar">PM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Designed &amp; Built by <span>Priyadharshini M</span> · Junior Web Developer · Tamil Nadu</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
