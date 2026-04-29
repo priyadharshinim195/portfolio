@@ -149,7 +149,7 @@
   @keyframes navDrop { to { transform: translateY(0); } }
   .nav-logo {
     font-family: var(--font-head);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 800;
     background: linear-gradient(90deg, var(--cyan), var(--indigo-light));
     -webkit-background-clip: text;
@@ -168,6 +168,10 @@
     padding-bottom: 4px;
     transition: color 0.3s;
   }
+  .hero-name {
+  font-size: clamp(3rem, 7vw, 6rem);
+  white-space: nowrap;
+}
   .nav-links a::after {
     content: '';
     position: absolute;
